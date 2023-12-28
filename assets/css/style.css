@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/*mobile*/
+
+.institucional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 1300px;
+    width: 100%;
+}
+
+.loja-virtual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.loja-virtual .informacoes-loja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loja-virtual .informacoes-loja .informacao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loja-virtual .informacoes-loja .imagen-loja {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.loja-virtual .informacoes-loja .informacao .solucoes {
+    font-size: 30px;
+}
+
+.loja-virtual .informacoes-loja .informacao .virtual {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.loja-virtual .informacoes-loja .informacao .descricao-loja {
+    font-size: 20px;
+    direction: inherit;
+}
+
+.texto {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: flex-end;
+    background-color: #257226;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.texto .texto-compra {
+    color: #FFF;
+    font-size: 17px;
+}
+
+.texto .link-parceiraco {
+    color: #84BD00;
+}
+
+.texto .foto-parceiraco {
+    position: absolute;
+    top: 80%;
+    width: 72px;
+
+}
+
+.atendimento-cliente {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.atendimento-cliente .img-atendimento {
+    max-width: 100%;
+    height: auto;
+}
+
+.atendimento-cliente .info-cliente {
+    display: flex;
+    align-items: center;
+    background-color: #84bd00ff;
+    padding: 20px;
+}
+
+.atendimento-cliente .info-cliente .texto-cliente {
+    font-size: 20px;
+    direction: inherit;
+}
+
+.info-segmentos {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.info-segmentos .texto-segmentos {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    direction: inherit;
+}
+
+.info-segmentos .card-img-segmentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.info-segmentos .card-img-segmentos .img-segmentos {
+    max-width: 40%;
+    height: auto;
+}
+
+.secao-portifolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/images/produto_barras_de_ferro.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px;
+    padding: 20px;
+}
+
+.secao-portifolio .texto-portifolio {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.secao-suporte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.texto-suporte {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+
+/*tablet*/
+@media (min-width:768px) {
+
+    .loja-virtual .informacoes-loja {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .loja-virtual .informacoes-loja .imagen-loja {
+        max-width: 40%;
+        margin-bottom: 20px;
+    }
+
+    .texto {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 40px;
+        position: relative;
+        height: 8em;
+    }
+
+    .texto .foto-parceiraco {
+        position: absolute;
+        top: 74%;
+        width: 70px;
+
+    }
+
+    .atendimento-cliente {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .atendimento-cliente .img-atendimento {
+        max-width: 40%;
+    }
+
+    .info-segmentos .texto-segmentos {
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    .info-segmentos .card-img-segmentos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+
+    .atendimento-cliente .info-cliente {
+        height: 12em;
+    }
+
+    .info-segmentos .card-img-segmentos .img-segmentos {
+        max-width: 22%;
+    }
+
+    .secao-portifolio .texto-portifolio {
+        font-size: 24px;
+    }
+
+    .secao-suporte {
+        padding: 20px;
+        width: 72%;
+    }
+
+    .texto-suporte {
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+
+}
+
+/*deskto*/
+@media (min-width:1300px) {
+
+    .loja-virtual .informacoes-loja .imagen-loja {
+        max-width: 30%;
+    }
+
+    .loja-virtual .informacoes-loja .informacao .solucoes {
+        font-size: 40px;
+    }
+
+
+    .loja-virtual .informacoes-loja .informacao .virtual {
+        font-size: 40px;
+    }
+
+    .loja-virtual .informacoes-loja .informacao .descricao-loja {
+        font-size: 25px;
+    }
+
+    .texto {
+        padding: 40px;
+        height: 12em;
+    }
+
+    .texto .texto-compra {
+        font-size: 35px;
+    }
+
+    .texto .foto-parceiraco {
+        position: absolute;
+        top: 81%;
+        width: 82px;
+    }
+
+    .atendimento-cliente .img-atendimento {
+        max-width: 30%;
+    }
+
+    .atendimento-cliente .info-cliente {
+        height: 14em;
+        padding: 40px;
+    }
+
+    .atendimento-cliente .info-cliente .texto-cliente {
+        font-size: 30px;
+    }
+
+    .info-segmentos .texto-segmentos {
+        font-size: 30px;
+    }
+
+    .secao-portifolio .texto-portifolio {
+        font-size: 30px;
+    }
+
+    .texto-suporte {
+        font-size: 20px;
+    }
+
+}
